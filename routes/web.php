@@ -1,6 +1,19 @@
 <?php
+	Route::get('/', function () {
+		return view('hello');
+	});
 
-use Illuminate\Support\Facades\Route;
-Route::get('/', function () {
-    return "hi";
-});
+
+
+	Route::prefix('admin')->group(function () {
+        Route::get('/users', function () {
+            return 'all';
+        });
+        Route::get('/user/{id}', function ($id) {
+            return $id;
+        });
+	});
+
+
+
+?>
