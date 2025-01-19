@@ -5,7 +5,10 @@
 	{
         public function show()
 		{
-			return 'hello world ' . 1;
+			return view('new.show', [
+				'title' => 'page title',
+				'text'  => 'page content',
+			]);
 		}
 	}
 ?>

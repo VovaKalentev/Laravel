@@ -7,6 +7,6 @@
 </head>
 <body>
     <h1>Hello world</h1>
-    <a href="admin/user/ee">post 12</a>
+    <a href="/post">post 12</a>
 </body>
 </html>
